@@ -2,6 +2,7 @@
 import glob
 import os
 import re
+from datetime import datetime, timedelta
 
 path = ["C:/Users/ren/Documents",
         "C:/Users/ren/Desktop",
@@ -90,8 +91,6 @@ def get_recent_words(my_path):
 
 
 def main():
-    from datetime import datetime, timedelta
-
     total_words = get_recent_words(path)
     # read the number of yesterday and target number
     log_path = "C:/Users/ren/Documents/writing_history.log"
